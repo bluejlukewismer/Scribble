@@ -32,6 +32,7 @@ public class DrawDemo
         pen.setColor(Color.BLUE);
 
         square(pen);
+        
     }
 
     /**
