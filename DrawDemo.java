@@ -35,10 +35,20 @@ public class DrawDemo
 
     }
 
+    public void drawPolygon(int n)
+    {
+        if(n == 3) {
+            //triangle();
+        }
+        
+    }
+
     public void drawPentagon()
     {
+        Pen pen = new Pen(150, 150, myCanvas);
+        pen.setColor(Color.MAGENTA);
+        pentagon(pen);
 
-        
     }
 
     public void drawTriangle()
@@ -61,6 +71,15 @@ public class DrawDemo
             square(pen);
             pen.turn(1);
         }
+    }
+
+    public void pentagon(Pen pen)
+    {
+        for (int i=0; i<5; i++) {
+            pen.move(50);
+            pen.turn(72);
+        }
+
     }
 
     public void triangle(Pen pen)
