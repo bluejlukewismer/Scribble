@@ -32,7 +32,21 @@ public class DrawDemo
         pen.setColor(Color.BLUE);
 
         square(pen);
+
+    }
+
+    public void drawPentagon()
+    {
+
         
+    }
+
+    public void drawTriangle()
+    {
+        Pen pen = new Pen(150, 150, myCanvas);
+        pen.setColor(Color.GREEN);
+
+        triangle(pen);
     }
 
     /**
@@ -45,8 +59,17 @@ public class DrawDemo
 
         for (int i=0; i<36; i++) {
             square(pen);
-            pen.turn(10);
+            pen.turn(1);
         }
+    }
+
+    public void triangle(Pen pen)
+    {
+        for (int i=0; i<3; i++) {
+            pen.move(50);
+            pen.turn(120);
+        }
+
     }
 
     /**
@@ -73,11 +96,11 @@ public class DrawDemo
             int green = random.nextInt(256);
             int blue = random.nextInt(256);
             pen.setColor(new Color(red, green, blue));
-            
+
             pen.randomSquiggle();
         }
     }
-    
+
     /**
      * Clear the screen.
      */
