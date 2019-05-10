@@ -38,9 +38,9 @@ public class DrawDemo
     public void drawPolygon(int n)
     {
         if(n == 3) {
-            //triangle();
+            triangle();
         }
-        
+
     }
 
     public void drawPentagon()
