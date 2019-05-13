@@ -37,17 +37,12 @@ public class DrawDemo
 
     public void drawPolygon(int n)
     {
-        if(n == 3) {
-            drawTriangle();
-        }
-        if(n == 4) {
-            drawSquare();
-        }
-        if(n == 5) {
-            drawPentagon();
-        }
-        else {
-            System.out.println("Unapplicable");
+        Pen pen = new Pen();
+        int t = 360 / n;
+        for (int i=0; i<n; i++) {
+            pen.move(50);
+            pen.turn(t);
+            
         }
     }
 
@@ -80,7 +75,7 @@ public class DrawDemo
             pen.turn(1);
         }
     }
-
+//5
     public void pentagon(Pen pen)
     {
         for (int i=0; i<5; i++) {
