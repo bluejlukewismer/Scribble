@@ -38,9 +38,17 @@ public class DrawDemo
     public void drawPolygon(int n)
     {
         if(n == 3) {
-            triangle();
+            drawTriangle();
         }
-
+        if(n == 4) {
+            drawSquare();
+        }
+        if(n == 5) {
+            drawPentagon();
+        }
+        else {
+            System.out.println("Unapplicable");
+        }
     }
 
     public void drawPentagon()
