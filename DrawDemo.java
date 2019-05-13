@@ -23,6 +23,15 @@ public class DrawDemo
         random = new Random();
     }
 
+    public void spiral()
+    {
+        for(int i = 0; i<10; i++) {
+            
+            
+        }
+        
+    }
+
     /**
      * Draw a square on the screen.
      */
@@ -35,14 +44,14 @@ public class DrawDemo
 
     }
 
-    public void drawPolygon(int n)
+    public void drawPolygon(int n, int size)
     {
         Pen pen = new Pen();
         int t = 360 / n;
         for (int i=0; i<n; i++) {
-            pen.move(50);
+            pen.move(size);
             pen.turn(t);
-            
+
         }
     }
 
@@ -75,7 +84,7 @@ public class DrawDemo
             pen.turn(1);
         }
     }
-//5
+
     public void pentagon(Pen pen)
     {
         for (int i=0; i<5; i++) {
