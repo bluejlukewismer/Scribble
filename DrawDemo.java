@@ -25,8 +25,10 @@ public class DrawDemo
 
     public void spiral()
     {
-        for(int i = 0; i<10; i++) {
-            
+        Pen pen = new Pen();
+        for(int i = 0; i<50; i++) {
+            pen.move(10);
+            pen.turn(90);
             
         }
         
