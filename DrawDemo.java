@@ -26,9 +26,10 @@ public class DrawDemo
     public void picOnCanvas()
     {
         //int xPos, int yPos, int width, int height
-        Canvas.setForegroundColor(Color.RED);
-        Canvas.fillRectangle(50, 50, 10, 10);
-        
+        myCanvas.setForegroundColor(Color.RED);
+        myCanvas.fillRectangle(50, 50, 10, 10);
+        myCanvas.setForegroundColor(Color.GREEN);
+        myCanvas.fillCircle(50, 50, 50);
     }
 
     public void spiral()
