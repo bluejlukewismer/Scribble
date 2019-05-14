@@ -30,6 +30,7 @@ public class DrawDemo
         myCanvas.fillRectangle(50, 50, 10, 10);
         myCanvas.setForegroundColor(Color.GREEN);
         myCanvas.fillCircle(50, 50, 50);
+        myCanvas.drawString("HULLO", 100, 100);
     }
 
     public void spiral()
