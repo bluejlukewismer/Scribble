@@ -23,15 +23,21 @@ public class DrawDemo
         random = new Random();
     }
 
+    public void picOnCanvas()
+    {
+
+        
+    }
+
     public void spiral()
     {
         Pen pen = new Pen();
-        for(int i = 0; i<50; i++) {
-            pen.move(10);
+        for(int i = 0; i<90; i++) {
+            pen.move(10*i);
             pen.turn(90);
-            
+
         }
-        
+
     }
 
     /**
