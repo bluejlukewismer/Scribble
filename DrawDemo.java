@@ -25,7 +25,9 @@ public class DrawDemo
 
     public void picOnCanvas()
     {
-
+        //int xPos, int yPos, int width, int height
+        Canvas.setForegroundColor(Color.RED);
+        Canvas.fillRectangle(50, 50, 10, 10);
         
     }
 
